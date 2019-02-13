@@ -286,5 +286,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+*.iml
+out
 
 # End of https://www.gitignore.io/api/macos
