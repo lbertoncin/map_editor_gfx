@@ -1,4 +1,4 @@
-package org.academiadecodigo.asciimos.mapeditorgfx.Engine;
+package org.academiadecodigo.asciimos.mapeditorgfx.engine;
 
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import java.util.ArrayList;

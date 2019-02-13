@@ -1,4 +1,4 @@
-package org.academiadecodigo.asciimos.mapeditorgfx.Cube;
+package org.academiadecodigo.asciimos.mapeditorgfx.cube;
 
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;

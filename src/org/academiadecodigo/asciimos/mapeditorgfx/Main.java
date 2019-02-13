@@ -1,6 +1,6 @@
 package org.academiadecodigo.asciimos.mapeditorgfx;
 
-import org.academiadecodigo.asciimos.mapeditorgfx.Engine.Engine;
+import org.academiadecodigo.asciimos.mapeditorgfx.engine.Engine;
 
 public class Main {
     public static void main(String[] args) {

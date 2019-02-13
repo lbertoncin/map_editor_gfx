@@ -1,8 +1,8 @@
-package org.academiadecodigo.asciimos.mapeditorgfx;
+package org.academiadecodigo.asciimos.mapeditorgfx.manager;
 
 import java.io.*;
 
-public class IO {
+public class FileManager {
 
     public static void save(String data, String destination) {
         try {

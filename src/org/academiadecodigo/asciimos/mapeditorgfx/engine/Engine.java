@@ -1,8 +1,8 @@
-package org.academiadecodigo.asciimos.mapeditorgfx.Engine;
+package org.academiadecodigo.asciimos.mapeditorgfx.engine;
 
-import org.academiadecodigo.asciimos.mapeditorgfx.Cube.Cube;
-import org.academiadecodigo.asciimos.mapeditorgfx.Cube.Direction;
-import org.academiadecodigo.asciimos.mapeditorgfx.IO;
+import org.academiadecodigo.asciimos.mapeditorgfx.cube.Cube;
+import org.academiadecodigo.asciimos.mapeditorgfx.cube.Direction;
+import org.academiadecodigo.asciimos.mapeditorgfx.manager.FileManager;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
@@ -31,11 +31,11 @@ public class Engine implements KeyboardHandler {
 
     private void save() {
         String data = grid.toString();
-        IO.save(data, "saves/game.data");
+        FileManager.save(data, "saves/game.data");
     }
 
     private void load() {
-        String data = IO.load("saves/game.data");
+        String data = FileManager.load("saves/game.data");
         grid.load(data);
     }
 
