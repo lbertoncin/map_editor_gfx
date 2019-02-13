@@ -1,6 +1,7 @@
 package org.academiadecodigo.asciimos.mapeditorgfx.Engine;
 
 import org.academiadecodigo.asciimos.mapeditorgfx.Cube.Cube;
+import org.academiadecodigo.asciimos.mapeditorgfx.Cube.Direction;
 import org.academiadecodigo.asciimos.mapeditorgfx.IO;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
@@ -98,25 +99,25 @@ public class Engine implements KeyboardHandler {
                 if (cube.getX() + cube.getDimension() > grid.getWidth()) {
                     return;
                 }
-                cube.moveRight();
+                cube.move(Direction.RIGHT);
                 break;
             case KeyboardEvent.KEY_LEFT:
                 if (cube.getX() - cube.getDimension() < 10) {
                     return;
                 }
-                cube.moveLeft();
+                cube.move(Direction.LEFT);
                 break;
             case KeyboardEvent.KEY_DOWN:
                 if (cube.getY() + cube.getDimension() > grid.getWidth()) {
                     return;
                 }
-                cube.moveDown();
+                cube.move(Direction.DOWN);
                 break;
             case KeyboardEvent.KEY_UP:
                 if (cube.getY() - cube.getDimension() < 10) {
                     return;
                 }
-                cube.moveUP();
+                cube.move(Direction.UP);
                 break;
         }
     }

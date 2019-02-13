@@ -15,20 +15,21 @@ public class Cube {
         rectangle.setColor(Color.RED);
     }
 
-    public void moveUP() {
-        rectangle.translate(0, -dimension);
-    }
-
-    public void moveDown() {
-        rectangle.translate(0, dimension);
-    }
-
-    public void moveLeft() {
-        rectangle.translate(-dimension, 0);
-    }
-
-    public void moveRight() {
-        rectangle.translate(dimension, 0);
+    public void move(Direction direction) {
+        switch (direction) {
+            case UP:
+                rectangle.translate(0, -dimension);
+                break;
+            case DOWN:
+                rectangle.translate(0, dimension);
+                break;
+            case LEFT:
+                rectangle.translate(-dimension, 0);
+                break;
+            case RIGHT:
+                rectangle.translate(dimension, 0);
+                break;
+        }
     }
 
     public void fill() {
