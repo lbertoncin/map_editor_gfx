@@ -1,6 +1,6 @@
 # map_editor_gfx
 
-Simple image paint using Simple Graphics, provided by Academia de Codigo_
+Simple image painter using Simple Graphics, provided by Academia de Código.
   
 Keys: 
  - S: Save
