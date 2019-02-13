@@ -30,11 +30,11 @@ public class Engine implements KeyboardHandler {
 
     private void save() {
         String data = grid.toString();
-        IO.save(data, "game.data");
+        IO.save(data, "saves/game.data");
     }
 
     private void load() {
-        String data = IO.load("game.data");
+        String data = IO.load("saves/game.data");
         grid.load(data);
     }
 
