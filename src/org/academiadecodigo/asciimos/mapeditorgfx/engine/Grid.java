@@ -8,13 +8,12 @@ public class Grid {
     private int size;
     private int x;
     private int y;
-
     private int width;
 
     private int dimension;
     private int timesDrawn;
 
-    private ArrayList<Rectangle> rectangles = new ArrayList<>();
+    private List<Rectangle> rectangles;
 
     public Grid(int size, int dimension) {
         this.x = 10;
@@ -22,8 +21,9 @@ public class Grid {
 
         this.size = size;
         this.dimension = dimension;
+        this.rectangles = new ArrayList<>();
 
-        this.width = dimension*size;
+        this.width = dimension * size;
     }
 
     public void drawGrid() {
