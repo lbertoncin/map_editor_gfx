@@ -2,6 +2,7 @@ package org.academiadecodigo.asciimos.mapeditorgfx.engine;
 
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Grid {
 
